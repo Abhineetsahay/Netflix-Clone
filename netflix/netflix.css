@@ -1,0 +1,647 @@
+/* setting basic property for page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* body color  */
+html,
+body {
+  background-color: black;
+  width: 100%; /* Default width */
+  margin: auto auto;
+}
+/* defining some variable for future purpose */
+:root {
+  --red: rgb(176, 0, 0);
+  --red-hover: rgb(152, 0, 0);
+  --border: 7px solid rgb(64, 64, 64);
+}
+/* giving background image and setting height */
+.section1 {
+  background-image: url(/images/netflix.jpg);
+  height: 632px;
+  border-bottom: var(--border);
+}
+.elements {
+  padding: 24px 32px 24px 32px;
+  display: flex;
+}
+/* containing all elements of navbar */
+.language-a-tag {
+  max-height: 50px;
+  max-width: 800px;
+  display: flex;
+}
+/* setting property for netflix logo */
+.img {
+  width: 148px;
+  height: 55px;
+  padding-top: 0px;
+  margin: 0;
+}
+/* giving property for select tag */
+.select {
+  outline: none;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  right: 100px;
+  width: 123px;
+  height: 32px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 0.23rem;
+}
+/* also for there option */
+.option {
+  color: whitesmoke;
+}
+/* giving property for sign-in tag */
+.sign-in {
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding-top: 7px;
+  padding-left: 7px;
+  font-size: 15px;
+  width: 65px;
+  height: 32px;
+  border: 0.45px solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 0.1875rem;
+  background-color: var(--red);
+}
+/* givin margin to starting elements*/
+.starting {
+  margin-top: 15%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* giving property to all the childs individually */
+.h1 {
+  font-size: 50px;
+  font-weight: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p1 {
+  font-size: 25px;
+  font-weight: 400px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.h3 {
+  font-size: 20px;
+  font-weight: 500px;
+}
+/* centering input tag and button */
+.e-mail-button1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+/* giving same propety to .input,.button */
+.input,
+.button {
+  height: 56px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+}
+.input {
+  filter: opacity(80%);
+  width: 353px;
+  background-color: rgb(96, 96, 96);
+  padding: 10px 16px 8px 16px;
+  font-size: 20px;
+  color: rgb(212, 206, 206);
+  border-radius: 3px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  outline: 1px solid snow;
+}
+.button:hover {
+  background-color: var(--red-hover);
+}
+.input:focus {
+  outline: 3px solid snow;
+}
+/* property of place-holder*/
+.input::placeholder {
+  color: white;
+  font-size: 16px;
+  transform: translateY(0px);
+  transition: transform 0.35s ease;
+}
+.input:focus::placeholder {
+  transform: translateY(-20px);
+  transition: transform 0.35s ease;
+}
+.button {
+  width: 203px;
+  background-color: rgb(82, 69, 69);
+  font-size: 20px;
+  background-color: var(--red);
+  border-radius: 3px;
+  color: aliceblue;
+  cursor: pointer;
+}
+/* property of arrow */
+#i {
+  width: 30px;
+}
+/* giving property to first part of section2 */
+.article {
+  width: 100%;
+  max-height: 700px;
+  margin-top: 60px;
+  border-bottom: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+/* allinging all the images to the left */
+/* centering all the h2 and p-tags in section-2 tags */
+.text-container {
+  text-align: left;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* property of image */
+.img1 {
+  padding: 20px;
+  width: 400px;
+  height: 351px;
+}
+/* property of tags for details  and also giving them individually*/
+.h2,
+.p2 {
+  color: white;
+}
+.h2 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 800px;
+}
+.p2 {
+  font-size: 1.8rem;
+  color: white;
+  width: 90%;
+  max-width: 800px;
+  min-width: 200px;
+}
+/* giving property to second part of section2 */
+.article1 {
+  width: 100%;
+  height: 450px;
+  margin-top: 60px;
+  border-bottom: var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img2 {
+  max-height: 400px;
+  width: 500px;
+}
+/* property of tags for details  and also giving them individually*/
+.article-1-p2,
+.article-1-h2 {
+  color: white;
+  text-align: left;
+  justify-content: center;
+}
+.article-1-h2 {
+  font-size: 45px;
+  max-width: 425px;
+}
+.article-1-p2 {
+  font-size: 24px;
+  max-width: 500px;
+}
+/* giving property to third part of section2 */
+.article2 {
+  width: 100%;
+  height: 500px;
+  margin-top: 60px;
+  border-bottom: var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+/* property of image */
+.img3 {
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 400px;
+  height: 351px;
+}
+/* property of tags for details  and also giving them individually*/
+.article-2-p3,
+.article-2-h3 {
+  color: white;
+}
+.article-2-h3 {
+  font-size: 55px;
+  margin-bottom: 5px;
+  /* transform: translate(20%, 130px); */
+}
+.article-2-p3 {
+  font-size: 30px;
+  font-weight: lighter;
+  width: 90%;
+  max-width: 800px;
+  min-width: 200px;
+}
+/* giving property to last part of section2 */
+.article3 {
+  width: 100%;
+  height: 450px;
+  margin-top: 60px;
+  border-bottom: var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* property of image */
+.img4 {
+  margin-top: 30px;
+  margin-left: 40px;
+  width: 400px;
+  height: 351px;
+}
+/* property of tags for details  and also giving them individually*/
+.article-1-p4,
+.article-1-h4 {
+  color: white;
+}
+.article-1-h4 {
+  font-size: 45px;
+}
+.article-1-p4 {
+  max-width: 468px;
+  height: 96px;
+  font-size: 24px;
+}
+/* giving property to section3 */
+.section3 {
+  max-height: 1500px;
+  border-bottom: var(--border);
+}
+.hFAQ {
+  color: white;
+  padding: 72px;
+  font-size: 40px;
+}
+.hFAQ h2{
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* styling of list */
+.list-li {
+  width: 90%;
+  max-width: 800px;
+  min-width: 200px;
+  height: 72px;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgb(48, 48, 48);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 20px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding-left: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+.list-li:hover {
+  background-color: rgb(88, 88, 88);
+}
+/* adding of cross and plus icon while pressing the list item */
+.plus {
+  margin-left: auto;
+  margin-right: 30px;
+}
+.cross {
+  margin-left: auto;
+  margin-right: 30px;
+  display: none;
+}
+/* answers styling of faq */
+.answers-pre {
+  width: 90%;
+  max-width: 800px;
+  min-width: 200px;
+  max-height: 500px;
+  background-color: rgb(48, 48, 48);
+  display: none;
+  overflow: hidden;
+  margin-bottom: 10px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 100px;
+}
+/* toggling the cross and plus */
+.plus1 {
+  display: none;
+}
+.plus2 {
+  display: block;
+}
+/* addng animation */
+.answers{
+  display: block;
+  animation: add1 1s linear;
+}
+@keyframes add1 {
+  from {
+    max-height: 0px;
+  }
+  to {
+    max-height: 1000px;
+  }
+}
+/* giving property to e-mail and button for login */
+.section-3-end-h3 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.e-mail-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.input1,
+.button1 {
+  height: 56px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+}
+.input1 {
+  filter: opacity(80%);
+  width: 353px;
+  background-color: rgb(96, 96, 96);
+  padding: 10px 16px 8px 16px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: rgb(212, 206, 206);
+  border-radius: 3px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  outline: 1px solid snow;
+}
+.button1:hover {
+  background-color: var(--red-hover);
+}
+.input1:focus {
+  outline: 3px solid snow;
+}
+.input1::placeholder {
+  color: white;
+  font-size: 16px;
+  transform: translateY(0px);
+  transition: transform 0.35s ease;
+}
+.input1:focus::placeholder {
+  transform: translateY(-20px);
+  transition: transform 0.35s ease;
+}
+.button1 {
+  width: 203px;
+  background-color: rgb(82, 69, 69);
+  font-size: 20px;
+  background-color: var(--red);
+  border-radius: 3px;
+  color: aliceblue;
+  cursor: pointer;
+  margin-top: 0px;
+}
+#i1 {
+  width: 30px;
+}
+/* giving styling for the last section */
+.section4 {
+  height: 550px;
+}
+/*styling for h2 tag*/
+.question {
+  display: inline-block;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.question-p {
+  color: white;
+  position: absolute;
+  left: -10px;
+  transform: translateY(100px);
+  transform: translate(100px, 80px);
+}
+/* for styling of  anchors tag in p tag*/
+.question-p a {
+  color: white;
+}
+/* styling of ul and arranging it column wise */
+.a-tags-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  transform: translateY(150px);
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+/* centering the elements vertically */
+.a-tags-li {
+  align-items: center;
+  margin: 10px;
+}
+/* giving white color to all a tags */
+.a-tags-li a {
+  color: white;
+}
+/* styling of select tag */
+.select1 {
+  outline: none;
+  width: 123px;
+  height: 32px;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 0.23rem;
+  transform: translate(90px, 150px);
+}
+/* ṣtyling for company name i.e Netflix India*/
+.p-tags {
+  color: white;
+  font-size: 15px;
+  font-weight: 200px;
+  position: absolute;
+  left: 90px;
+  transform: translateY(160px);
+  margin-bottom: 100px;
+}
+/* making the website responsive */
+@media screen and (max-width: 767px) {
+  .section1 {
+    max-width: 768px;
+    max-height: 600px;
+    background-image: url(/images/netflix.jpg);
+  }
+  .h1,
+  .p1,
+  .h3 {
+    width: 90%;
+    max-width: 800px;
+    min-width: 200px;
+  }
+  .h1 {
+    flex-wrap: wrap;
+    font-size: 35px;
+  }
+  .e-mail-button1 {
+    flex-direction: column;
+  }
+  .input{
+    max-width: 350px;
+  }
+  .button {
+    max-width: 300px;
+  }
+  .article {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: 735px;
+    max-width: 768px;
+  }
+  .img1 {
+    max-width: 640px;
+    max-height: 480px;
+  }
+  .h2 {
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+  }
+  .p2 {
+    font-size: 17px;
+  }
+  .article1 {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: 735px;
+    max-width: 768px;
+  }
+  .img2 {
+    max-width: 640px;
+    max-height: 480px;
+  }
+  .article-1-h2 {
+    font-size: 35px;
+  }
+  .article-1-p2 {
+    font-size: 18px;
+  }
+  .article2 {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: 735px;
+    max-width: 768px;
+  }
+  .article-2-p3,
+  .article-2-h3 {
+    display: flex;
+    justify-content: center;
+  }
+  .img3 {
+    max-width: 600px;
+    max-height: 480px;
+  }
+  .article-2-h3 {
+    font-size: 45px;
+  }
+  .article-2-p3 {
+    font-size: 17px;
+  }
+  .article3 {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: 735px;
+    max-width: 768px;
+  }
+  .img4 {
+    max-width: 640px;
+    max-height: 480px;
+  }
+  .article-1-h4 {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+  }
+  .article-1-p4 {
+    font-size: 17px;
+  }
+  .accordian {
+    max-width: 768px;
+  }
+  .hFAQ {
+    font-size: 20px;
+  }
+  .list-li,
+  .answers-pre {
+    max-width: 500px;
+  }
+  .section-3-end-h3 {
+    height: 54px;
+    font-size: 18px;
+    line-height: 15px;
+  }
+  .input1,
+  .button1 {
+    max-width: 250px;
+  }
+  .a-tags-ul {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: black;
+    width: 120.3%;
+    margin: auto auto;
+  }
+  .e-mail-button {
+    flex-direction: column;
+  }
+}
