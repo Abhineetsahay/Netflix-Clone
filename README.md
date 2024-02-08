@@ -1,3 +1,4 @@
-<strong>Netflix-Clone</strong>
+<bold>Netflix-Clone</bold>
 <br>
 It is made using HTML,CSS and JAVASCRIPT
+

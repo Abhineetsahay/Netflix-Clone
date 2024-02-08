@@ -547,7 +547,7 @@ justify-content: center;
   .starting-h1,
   .starting-p1,
   .starting-h3 {
-    width: 90%;
+    width: 80%;
     max-width: 800px;
     min-width: 200px;
   }
