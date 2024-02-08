@@ -1,0 +1,264 @@
+/* styling for html and body tags */
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* adding font-family */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* adding a imgae for background */
+.section {
+  max-height: 2000px;
+  background-image: url(/images/netflix.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* setting up the netflix file */
+.imgae-def {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.image-last {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.header-image {
+  height: 85px;
+  width: 200px;
+}
+.image {
+  width: 148px;
+  height: 40px;
+  padding-top: 20px;
+}
+/* the styling for sign-in-starts here and centering the elements */
+.header {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* creating a border for sign-in */
+.signin {
+  max-height: 707px;
+  width: 375px;
+  border: 2px solid;
+  background-color: black;
+  filter: opacity(0.825);
+  padding: 48px 58px;
+  margin-bottom: 50px;
+}
+/* elements of h1-tag */
+.signin h1 {
+  display: flex;
+  justify-content: start;
+  color: white;
+  font-size: 32px;
+}
+/* styling of div of inputs,button and a-tags*/
+.signin-components {
+  height: 250px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+/* styling of input tag and button individually */
+.input[type="email"],
+.input1[type="password"] {
+  padding: 10px 16px 10px 16px;
+  font-size: 20px;
+  color: rgb(212, 206, 206);
+  border-radius: 3px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  outline: 0.005rem solid snow;
+  width: 90%;
+}
+.input:focus {
+  outline: 3px solid snow;
+}
+.input::placeholder {
+  color: white;
+  font-size: 16px;
+  transform: translateY(0px);
+  transition: transform 0.35s ease;
+}
+.input:focus::placeholder {
+  transform: translateY(-15px);
+  transition: transform 0.35s ease;
+}
+.button {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(255, 0, 0);
+  border: none;
+  color: snow;
+  border-radius: 5px;
+}
+/* centering forget-password */
+.Forget-password {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+.Forget-password:hover {
+  text-decoration: underline;
+}
+/* styling of more components tags in sign in page */
+.more-section {
+  max-height: 300px;
+  max-width: 300px;
+}
+/* aligining elements in center */
+.input-label {
+  display: flex;
+  align-items: center;
+}
+.input-label input{
+  height: 25px;
+  width: 20px;
+}
+.input-label label{
+  color: white;
+  padding-left: 10px;
+  font-size: 16px;
+}
+/*styling p-tag in .more-section*/
+.more-section p {
+  color: snow;
+  margin-bottom: 0;
+}
+.sign-in-now {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+/* setting up height and width of .span-container  */
+.span-container {
+  margin-top: 10px;
+  height: 200px;
+  width: 375px;
+  color: white;
+  font-size: 13px;
+
+}
+.button1,.span-a-tags{
+  background-color: transparent;
+  color: #0071eb;
+  border: none;
+  cursor: pointer;
+}
+.button1:hover,.span-a-tags:hover{
+  text-decoration: underline;
+}
+.span-details{
+  display: none;
+  
+}
+
+.footer {
+  height: 325px;
+  background-color: black;
+  filter: opacity(0.825);
+}
+/* basic property of footer */
+.footer1 {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 76px 72px 0px 108px;
+  max-height: 350px;
+  max-width: 1000px;
+}
+/* phone-number tag */
+.doubt {
+  max-width: 100%;
+  height: 32px;
+}
+.answer {
+  color: white;
+}
+.answer a {
+  color: snow;
+  text-decoration: none;
+}
+/* making a grid- layout for list-items */
+.list-items {
+  max-width: 1000px;
+  list-style-type: none;
+  margin: -16px 0px 14px -12px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  row-gap: 5px;
+  column-gap: 5px;
+}
+.list-containers {
+  max-width: 250px;
+  margin: 16px 0px 5px 12px;
+}
+.list-containers a {
+  color: snow;
+}
+.select {
+  max-width: 75px;
+  outline: none;
+}
+/* making the page responsive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
+  .section {
+    background-image: none;
+  }
+  .header {
+    max-width: 100%;
+    align-items: start;
+    justify-content: start;
+    padding: 0 20px;
+  }
+  h1 {
+    margin-top: 0;
+  }
+  .signin {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    max-width: 100%;
+  }
+  .form {
+    max-width: 150%;
+  }
+  .signin-components {
+    width: 525px;
+    max-width: 100%;
+  }
+  .input {
+    max-width: 100%;
+    min-width: 16px;
+  }
+  .button {
+    max-width: 97.5%;
+  }
+  .span-container {
+    max-width: 150%;
+  }
+  .footer1 {
+    padding: 32px;
+  }
+  .list-items {
+    grid-template-columns: auto auto;
+  }
+}

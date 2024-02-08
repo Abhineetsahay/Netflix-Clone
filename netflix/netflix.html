@@ -15,7 +15,6 @@
     <!--giving image to icon tag -->
     <link rel="icon" href="/images/netflix-logo.png" />
   </head>
-
   <body>
     <!-- First Section -->
     <section class="section1">
@@ -25,32 +24,33 @@
         <div class="navbar-elements">
           <!-- imgage of netflix -->
           <div class="elements">
-            <div class="language-a-tag">
-              <span
+            <div class="language-a-image-tag">
+              <span class="span-tag"
                 ><img src="/images/logo.png" alt="Netflix" class="img"
               /></span>
               <!-- Select for language -->
+              <div class="language-atag">
               <select name="selectLanguage" id="selectLanguage" class="select">
                 <option value="english" class="option">English</option>
                 <option value="spanish" class="option">Hindi</option>
               </select>
               <!-- sign for new users -->
               <a
-                href=""
-                target="_blank"
+                href="/Sign-in/signin.html"
                 rel="noopener noreferrer"
                 class="sign-in"
                 >Sign In</a
               >
+            </div>
             </div>
           </div>
         </div>
         <!--contents of first section  -->
         <div class="starting">
           <!-- first three tags contains are the contains -->
-          <h1 class="h1">Unlimited movies, TV shows and more</h1>
-          <p class="p1">Watch anywhere. Cancel anytime.</p>
-          <h3 class="h3">
+          <h1 class="starting-h1">Unlimited movies, TV shows and more</h1>
+          <p class="starting-h1">Watch anywhere. Cancel anytime.</p>
+          <h3 class="starting-h3">
             Ready to watch? Enter your email to create or restart your
             membership.
           </h3>
@@ -90,10 +90,10 @@
         <img src="/images/feature-2.png" alt="Pic-Of-Phone" class="img2" />
         <!-- tell more details  -->
         <div class="text-container">
-          <h2 class="article-1-h2" id="article2h2">
+          <h2 class="article-1-h2">
             Download your shows to watch offline
           </h2>
-          <p class="article-1-p2" id="article2h2">
+          <p class="article-1-p2">
             Save your favourites easily and always have something to watch.
           </p>
         </div>
@@ -104,8 +104,8 @@
         <img src="/images/feature-3.png" alt="Television" class="img3" />
         <!-- tell more details -->
         <div class="text-container">
-          <h2 class="article-2-h3" id="article2h2">Watch everywhere</h2>
-          <p class="article-2-p3" id="article2h2">
+          <h2 class="article-2-h3">Watch everywhere</h2>
+          <p class="article-2-p3">
             Stream unlimited movies and TV shows on your phone, tablet, laptop,
             and TV.
           </p>
@@ -121,8 +121,8 @@
         />
         <!-- tell more details  -->
         <div class="text-container">
-          <h2 class="article-1-h4" id="article2h2">Create profiles for kids</h2>
-          <p class="article-1-p4" id="article2h2">
+          <h2 class="article-1-h4">Create profiles for kids</h2>
+          <p class="article-1-p4">
             Send children on adventures with their favourite characters in a
             space made just for them—free with your membership.
           </p>
@@ -236,7 +236,6 @@
     <!-- last part of page (section 4) -->
     <section class="section4">
       <!-- it is a footer -->
-
       <!-- number for help  -->
       <div class="question">
         <p class="question-p">
@@ -244,7 +243,6 @@
         </p>
       </div>
       <!-- here also a-tags for more help-->
-
       <ul class="a-tags-ul">
         <li class="a-tags-li"><a href="">FAQ</a></li>
         <li class="a-tags-li"><a href="">Help Centre</a></li>
@@ -262,14 +260,15 @@
         <li class="a-tags-li"><a href="">Legel Notices</a></li>
         <li class="a-tags-li"><a href="">Only on Netflix</a></li>
       </ul>
-
       <!-- for language change -->
+      <div class="select-p">
       <select name="selectLanguage" class="select1">
         <option value="english" class="option1">English</option>
         <option value="spanish" class="option1">Hindi</option>
       </select>
       <!-- name of company -->
       <p class="p-tags">Netflix India</p>
+    </div>
     </section>
     <script src="netflix.js"></script>
   </body>

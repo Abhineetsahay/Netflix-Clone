@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="signin.css" />
+    <link rel="icon" href="/images/netflix-logo.png" />
+    <!-- Creating sign up page for netflix -->
+  </head>
+  <body>
+    <!-- making a hole section for sign up page -->
+    <section class="section">
+      <!-- adding a netflix logo   -->
+      <div class="image-def">
+        <div class="image-last">
+          <div class="header-image">
+            <img src="/images/logo.png" alt="netflix-logo" class="image" />
+          </div>
+        </div>
+      </div>
+      <!-- here,all the sign-up components are there in header tag -->
+      <header class="header">
+        <div class="signin">
+          <h1>Sign In</h1>
+          <form action="" class="form">
+
+            <div class="signin-components">
+              <input
+                type="email"
+                class="e-mail input"
+                placeholder="Write you E-mail.."
+                id="e-mail"
+                required
+              />
+              <input
+                type="password"
+                class="password input1"
+                placeholder="Enter the password"
+                id="password"
+                required
+              />
+              <button class="button" type="submit">Sign In</button>
+              <!-- creating a link for forget-button -->
+              <a href="" class="Forget-password">Forget password?</a>
+            </div>
+          </form>
+<!-- writing extra-details in sign-in-page -->
+          <div class="more-section">
+            <div class="input-label">
+              <input type="checkbox" value="Rememberme" id="Rememberme" />
+              <label for="Rememberme">Remember me</label>
+            </div>
+            <p>
+              New to Netflix
+              <a href="/netflix/netflix.html" class="sign-in-now"
+                >Sign up now</a
+              >
+            </p>
+            <div class="span-container" id="container">
+             <p>This page is protected by Google reCAPTCHA to ensure you're not
+                a bot. 
+                <button class="button1" id="button1">Learn more.</button>
+              </p>
+              <span class="span-details" id="span-details">
+                <p id="p">
+                  The information collected by Google reCAPTCHA is subject to the Google <a href="" class="span-a-tags">Privacy Policy</a> and <a href="" class="span-a-tags">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised advertising by Google).
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- it is the footer part of the page -->
+      <footer class="footer">
+        <div class="footer1">
+        <div class="doubt">
+          <!-- number for doubt -->
+              <div class="answer">
+                Questions? Call  <a href="tel:+000-000-000-000"> 000-000-000-000</a>
+              </div>
+        </div>
+        <!-- all the questions -->
+        <ul class="list-items">
+          <li class="list-containers"><a href="">FAQ</a></li>
+          <li class="list-containers"><a href="">Help Centre</a></li>
+          <li class="list-containers"><a href="">Terms Of Use</a></li>
+          <li class="list-containers"><a href="">Privacy</a></li>
+          <li class="list-containers"><a href="">Cookie Preferences</a></li>
+          <li class="list-containers"><a href="">Corporate Information</a></li>
+        </ul>
+        <!-- language option -->
+        <select name="selectLanguage" id="selectLanguage" class="select">
+          <option value="english" class="option">English</option>
+          <option value="spanish" class="option">Hindi</option>
+        </select>
+      </div>
+      </footer>
+    </section>
+    <script src="signin.js"></script>
+  </body>
+</html>
