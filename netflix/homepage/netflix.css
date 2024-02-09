@@ -19,7 +19,7 @@ body {
 }
 /* giving background image and setting height */
 .section1 {
-  background-image: url(/images/netflix.jpg);
+  background-image: url(images/netflix.jpg);
   height: 632px;
   border-bottom: var(--border);
 }

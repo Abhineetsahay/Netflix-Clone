@@ -13,7 +13,7 @@ body {
 /* adding a imgae for background */
 .section {
   max-height: 2000px;
-  background-image: url(/images/netflix.jpg);
+  background-image: url(images/netflix.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
